@@ -1,0 +1,14 @@
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\bin\Debug\net8.0\Files.core.exe
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\bin\Debug\net8.0\Files.core.deps.json
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\bin\Debug\net8.0\Files.core.runtimeconfig.json
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\bin\Debug\net8.0\Files.core.dll
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\bin\Debug\net8.0\Files.core.pdb
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.AssemblyInfoInputs.cache
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.AssemblyInfo.cs
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.csproj.CoreCompileInputs.cache
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.dll
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\refint\Files.core.dll
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.pdb
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.genruntimeconfig.cache
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\ref\Files.core.dll
