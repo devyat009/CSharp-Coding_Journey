@@ -12,3 +12,4 @@ C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journ
 C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.pdb
 C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.genruntimeconfig.cache
 C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\ref\Files.core.dll
+C:\Mota (V)\user\usr-Higor\Portfolio\Projetos\Programação\C-Sharp_Coding_Journey\Files.core\obj\Debug\net8.0\Files.core.sourcelink.json
