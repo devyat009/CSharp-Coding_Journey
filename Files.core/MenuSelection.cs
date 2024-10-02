@@ -2,6 +2,7 @@
 using Atividade._01;
 using Atividade._02;
 using Atividade._03;
+using Atividade._04;
 namespace Atividade
 {
     public static class MenuSelection
@@ -20,6 +21,7 @@ namespace Atividade
                     Console.WriteLine("1 - Hello World, input, operações matemáticas básicas e tabuada");
                     Console.WriteLine("2 - API de Conversão de dolar e real");
                     Console.WriteLine("3 - Manipulação de Lista");
+                    Console.WriteLine("4 - Unit Testing (NUnit)");
                     Console.WriteLine("0 - SAIR");
                     Console.Write("Escolha - ");
                     string? opcao = Console.ReadLine();
@@ -44,6 +46,22 @@ namespace Atividade
                             Atividade03.atividade_03_menu();
                             Console.ReadKey();
                             continue;
+                        case "4":
+                            //For True
+                            //var Testinstance = new TestuN();
+                            //Console.WriteLine("Testing True...");
+                            //Testinstance.test_true();
+                            //Console.WriteLine("Testing False...");
+                            //Testinstance.test_false();
+                            var Testinstance = new UNTest01();  // Instancia da classe UNTest01
+                            Console.WriteLine("Testing True...");
+                            var resultTrue = Testinstance.TrueTest(1);  // Testando TrueTest
+                            Console.WriteLine($"Resultado TrueTest(1): {resultTrue}");
+                            Console.WriteLine("Testing False...");
+                            var resultFalse = Testinstance.TrueTest(-1);  // Testando TrueTest
+                            Console.WriteLine($"Resultado TrueTest(-1): {resultFalse}");
+                            Console.ReadKey(); // Pausa para ver os resultados
+                            break;
                         case "0":
                             Console.WriteLine("Saindo...");
                             continuar = false;
@@ -55,7 +73,11 @@ namespace Atividade
                     }
                 }
             }
-
+            //var Testinstance0 = new TestuN();
+            //Testinstance0.test_true();
+            //Testinstance0.test_false();
+            //Console.WriteLine("O processo fechou");
+            //Console.ReadKey();
         }
     }
 }
