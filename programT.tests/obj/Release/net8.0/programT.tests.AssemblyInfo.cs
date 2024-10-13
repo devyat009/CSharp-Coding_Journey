@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Files.core")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("programT.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a5f4c93d71a2239653d22352023afcc2ea79968")]
-[assembly: System.Reflection.AssemblyProductAttribute("Files.core")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Files.core")]
+[assembly: System.Reflection.AssemblyProductAttribute("programT.tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("programT.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

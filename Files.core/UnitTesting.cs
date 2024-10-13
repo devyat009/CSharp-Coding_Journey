@@ -1,12 +1,12 @@
-using NUnit.Framework;
+using Xunit;
 
-namespace Atividade._04
+namespace CSharpJourney._04
 {   
-    public class UNTest01
+    public class Unitest
     {
-        public bool TrueTest(int value)
+        public static bool verdadeiro_ou_falso(float value1)
         {
-            if (value >= 0)
+            if (value1 > 0)
             {
                 return true;
             }
@@ -14,28 +14,6 @@ namespace Atividade._04
             {
                 return false;
             }
-        }
-    }
-    // Tests
-    [TestFixture]
-    public class TestuN
-    {
-        [Test]
-        public void test_true()
-        {
-            var UNTest = new UNTest01();
-            var isTrue = UNTest.TrueTest(1);
-            // Verify if is True
-            //Assert.AreEqual(true, isTrue);
-            Assert.That(isTrue, Is.EqualTo(true));
-        }
-        [Test]
-        public void test_false()
-        {
-            var UNTest = new UNTest01();
-            var isFalse = UNTest.TrueTest(-1);
-            //Assert.AreEqual(false, isFalse);
-            Assert.That(isFalse, Is.EqualTo(false));
         }
     }
 }
