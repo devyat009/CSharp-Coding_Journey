@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class ="cadastro_container">
+        <form id="cadastro" class="cadastroItens">
+            <div class="text_container">Nome</div>
+            <input type="text" class ="inputContainer" id="idNome" name="nome" required placeholder="Nome">
+            <div class="text_container">Idade</div>
+            <input type="number" class ="inputContainer" id="idIdade" name="idade" required placeholder="Idade" >
+            <div class="text_container">Data de nascimento</div>
+            <input type="date" class ="inputContainer" id="idData" name="dataNascimento" required placeholder="mes/dia/ano"/>
+            <div class="text_container">CPF</div>
+            <input type="number" class ="inputContainer" id="idCpf" name="cpf" required placeholder="000.000.000-0">
+            <div class="text_container">CEP</div>
+            <input type="number" class ="inputContainer" id="idCep" name="cep" required placeholder="000.000.000">
+            <input type="submit" class="botaoCadastrar" value="Registrar">
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('cadastro').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+
+            try {
+                const response = await fetch('/cadastro', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                const result = await response.text();
+                alert(result); // Exibe a resposta do servidor
+            } catch (error) {
+                console.error('Erro ao registrar:', error);
+            }
+        });
+    </script>
+</body>
+</html>
