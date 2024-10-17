@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\WebApplication\\WebApp.csproj": {}
+    "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\WebApplication\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\WebApplication\\WebApp.csproj": {
+    "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\WebApplication\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\WebApplication\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\WebApplication\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\WebApplication\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\WebApplication\\obj\\",
+        "projectPath": "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\WebApplication\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Websis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\WebApplication\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Websis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

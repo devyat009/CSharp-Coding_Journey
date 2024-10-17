@@ -856,19 +856,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\henri\\.nuget\\packages\\": {}
+    "C:\\Users\\Websis\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\Files.core\\Files.core.csproj",
+      "projectUniqueName": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
       "projectName": "Files.core",
-      "projectPath": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\Files.core\\Files.core.csproj",
-      "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Mota (V)\\user\\usr-Higor\\Portfolio\\Projetos\\Programação\\C-Sharp_Coding_Journey\\Files.core\\obj\\",
+      "projectPath": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
+      "packagesPath": "C:\\Users\\Websis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Websis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -925,7 +930,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

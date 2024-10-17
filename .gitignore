@@ -1,2 +1,11 @@
 .vs/
 .vscode/
+
+Files.core/bin
+Files.core/obj
+
+programT.tests/bin
+programT.tests/obj
+
+WebApplication/bin
+WebApplication/obj

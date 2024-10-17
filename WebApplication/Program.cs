@@ -26,6 +26,16 @@ builder.Services.AddEndpointsApiExplorer();
 //        //options.JsonSerializerOptions.ReadOnly = false;
 //        options.JsonSerializerOptions.TypeInfoResolverChain.Add(SerializationContext.Default);
 //    });
+
+// Altera a politica para que o angular possa acessar as apis no swagger, indepentemente da porta, metodo ou header.
+builder.Services.AddCors(option => option.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin();
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+    }));
+
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Painel Conexões", Version = "v1.0" });
@@ -79,7 +89,8 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); // Pode gerar problemas de redirecionamento para https (as vezes)
+app.UseCors(); // Usa as politicas criadas anteriomente
 
 app.UseStaticFiles(); // Usado para que possa ser carregado o arquivo html
 app.MapGet("/", () => Results.Redirect("/buscacep"));
