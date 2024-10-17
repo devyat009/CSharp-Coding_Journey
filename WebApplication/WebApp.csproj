@@ -8,10 +8,10 @@
     <PublishAot>true</PublishAot>
   </PropertyGroup>
 	<ItemGroup>
+		<Folder Include="WebApp.Domain\" />
 		<Folder Include="wwwroot\resources\" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Grpc.Core.Api" Version="2.66.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
 		<PackageReference Include="MySql.Data" Version="9.1.0" />

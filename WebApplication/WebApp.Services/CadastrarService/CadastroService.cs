@@ -1,10 +1,9 @@
 ﻿using System;
-using WebApp.WebApp.Services;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace WebApp.WebApp.Services
+namespace WebApp.WebApp.Services.CadastrarService
 {
     public class CadastroService
     {

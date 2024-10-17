@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
-namespace WebApp.WebApp.Services
+namespace WebApp.WebApp.Services.CadastrarService
 {
     [JsonSerializable(typeof(CadastroDataService))]
     public partial class CadastroDataService

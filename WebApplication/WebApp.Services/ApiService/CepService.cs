@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace WebApp.WebApp.Services
+namespace WebApp.WebApp.Services.ApiService
 {
     public class CepService
     {
