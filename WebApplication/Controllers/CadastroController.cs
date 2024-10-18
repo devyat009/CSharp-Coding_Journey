@@ -53,8 +53,49 @@ namespace WebApp.Controllers
             {
                 return BadRequest($"Ocorreu um erro: {ex.Message}");
             }
+        }
 
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
+        public IActionResult Delete([FromForm] CadastroDeleteRequest cadastroDeleteRequest)
+        {
+            if (cadastroDeleteRequest == null)
+            {
+                return BadRequest("Corpo de requerimento está vazio, verifique o conteúdo");
+            }
 
+            try
+            {
+                string query = "DELETE FROM cadastrouser WHERE idUser = @Id";
+
+                string conenctionString = "Server=localhost;Database=cadastrodb;User Id=root;";
+
+                CadastroService.DeletarCadastro(query, conenctionString, cadastroDeleteRequest);
+                return Ok("Excluído com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao processar os dados: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
+        public IActionResult Get()
+        {
+            try
+            {
+                string query = "SELECT * FROM cadastrouser";
+
+                string connectionString = "Server=localhost;Database=cadastrodb;User Id=root;";
+
+                var users = CadastroService.MostrarTodosCadastros(query, connectionString);
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao processar os dados: {ex.Message}");
+            }
         }
     }
 }

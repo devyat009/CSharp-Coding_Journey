@@ -7,10 +7,19 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <PublishAot>true</PublishAot>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WebApp.Domain\**" />
+    <Compile Remove="wwwroot\resources\**" />
+    <Content Remove="WebApp.Domain\**" />
+    <Content Remove="wwwroot\resources\**" />
+    <EmbeddedResource Remove="WebApp.Domain\**" />
+    <EmbeddedResource Remove="wwwroot\resources\**" />
+    <None Remove="WebApp.Domain\**" />
+    <None Remove="wwwroot\resources\**" />
+  </ItemGroup>
 	<ItemGroup>
 		<Folder Include="Services\ApiService\" />
-		<Folder Include="WebApp.Domain\" />
-		<Folder Include="wwwroot\resources\" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
