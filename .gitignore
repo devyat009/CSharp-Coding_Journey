@@ -1,11 +1,22 @@
+# Pastas e arquivos do Visual Studio
 .vs/
 .vscode/
 
-Files.core/bin
-Files.core/obj
+# Binários e arquivos de build gerados
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
 
-programT.tests/bin
-programT.tests/obj
+# Arquivos de configuração de usuário do Visual Studio
+*.user
+*.suo
 
-WebApplication/bin
-WebApplication/obj
+# Configurações do Rider (se estiver usando)
+.idea/
+
+# Arquivos temporários de build e publicações
+*.log
+*.db
+*.DS_Store
+*.bak
