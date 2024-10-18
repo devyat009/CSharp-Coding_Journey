@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Text.Json;
+using WebApp.WebApp.Requests;
 
 namespace WebApp.Controllers
 {
@@ -10,9 +11,9 @@ namespace WebApp.Controllers
     public class CepController : ControllerBase
     {
         [HttpPost]
-        public async Task<IActionResult> Post([FromForm] string cep)
+        public async Task<IActionResult> Post([FromBody] CepRequest cepRequest)
         {
-            cep = cep.Trim().Replace(".", "").Replace("-", "");
+            string cep = cepRequest.cep.Trim().Replace(".", "").Replace("-", "");
             int ceplenght = cep.Length;
             if (ceplenght != 8)
             {
@@ -27,7 +28,7 @@ namespace WebApp.Controllers
                     var response = await httpClient.GetAsync($"https://viacep.com.br/ws/{cep}/json/");
                     if (!response.IsSuccessStatusCode) // se der ruim ele envia um erro
                     {
-                        return BadRequest("Erro ao buscar CEP na API externa.");
+                        return BadRequest($"Erro ao buscar CEP na API externa. {response}");
                     }
 
                     var data = await response.Content.ReadAsStringAsync();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using WebApp.WebApp.Requests;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApp.WebApp.Services.CadastrarService
@@ -33,7 +34,7 @@ namespace WebApp.WebApp.Services.CadastrarService
         //    }
         //}
 
-        public static void CreateCommandV3(string queryString, string connectionString, CadastroDataService data)
+        public static void CreateCommandV3(string queryString, string connectionString, CadastroRequest data)
         {
             using (var connection = new MySqlConnection(connectionString))
             {

@@ -35,6 +35,8 @@ builder.Services.AddCors(option => option.AddDefaultPolicy(policy =>
         policy.AllowAnyMethod();
     }));
 
+builder.Services.AddControllers();
+
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -138,7 +140,7 @@ app.MapPost("/cadastro2", static async (HttpContext httpContext) =>
         return Results.BadRequest("Corpo da requisição está vazio.");
     }
 
-    var data = JsonSerializer.Deserialize<CadastroDataService>(body);
+    var data = JsonSerializer.Deserialize<CadastroRequest>(body);
     try
     {
         if (data == null || !CadastroService.ValidaCadastrar(data.nome, data.idade, data.dataNascimento, data.cpf, data.cep))
@@ -207,5 +209,8 @@ app.MapPost("/apicep", async (HttpContext httpContext) =>
     .Accepts<IFormCollection>("application/x-www-form-urlencoded", "multipart/form-data")
     .WithName("GetCepInfo")
     .WithTags("CEP API");
+
+//
+app.MapControllers();
 
 app.Run();

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj": {}
+    "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj": {
+    "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
+        "projectUniqueName": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
         "projectName": "Files.core",
-        "projectPath": "C:\\Users\\Websis\\source\\repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
+        "projectPath": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\Files.core.csproj",
         "packagesPath": "C:\\Users\\Websis\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Websis\\Source\\Repos\\CSharp-Coding_Journey\\Files.core\\obj\\",
         "projectStyle": "PackageReference",
