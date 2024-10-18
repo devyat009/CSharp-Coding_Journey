@@ -1,4 +1,4 @@
-﻿namespace WebApp.WebApp.Requests
+﻿namespace WebApp.Requests
 {
     public class CepRequest
     {
