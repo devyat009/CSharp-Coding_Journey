@@ -1,8 +1,5 @@
-﻿using Microsoft.VisualStudio.TestPlatform.CoreUtilities.Extensions;
-using System.Text.Json;
-using Xunit.Sdk;
-
-namespace CSharpJourney.core.Services
+﻿using System.Text.Json;
+namespace CSharpJourney.Services
 {
     public static class ApiConstants
     {

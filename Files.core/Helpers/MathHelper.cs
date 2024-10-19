@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace CSharpJourney.core.Helpers
+﻿namespace CSharpJourney.Helpers
 {
     public static class MathHelper
     {

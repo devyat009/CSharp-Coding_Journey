@@ -1,23 +1,14 @@
-﻿using CSharpJourney.core.Helpers;
-using CSharpJourney.core.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Files.core.Services
+﻿namespace CSharpJourney.Services
 {
-    public class DollarApiMenuService
+    public static class DollarApiMenuService
     {
         public static async Task DollarApiMenu()
         {
             await DollarApiService.DollarApiRun();
             DollarApiService.DollarValue();
             float dolar = DollarApiService.dollarValue;
-            bool inputUser = false;
             int userInput = 0;
-            while (!inputUser)
+            while (true)
             {
                 Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.Clear();
@@ -52,7 +43,6 @@ namespace Files.core.Services
                             Console.ReadKey();
                             break;
                         case 0:
-                            inputUser = true;
                             return;
                         default:
                             break;
@@ -69,48 +59,42 @@ namespace Files.core.Services
         }
         public static void ConversionDollarToRealMenu()
         {
+            bool inputUser = false;
+            float userInput = 0;
+            while (!inputUser)
             {
-                bool inputUser = false;
-                float userInput = 0;
-                while (!inputUser)
+                Console.Write("Digite a quantidade de Dolares para converter: ");
+                string? input = Console.ReadLine();
+                if (!string.IsNullOrEmpty(input) && float.TryParse(input, out userInput))
                 {
-                    Console.Write("Digite a quantidade de Dolares para converter: ");
-                    string? input = Console.ReadLine();
-                    if (!string.IsNullOrEmpty(input) && float.TryParse(input, out userInput))
-                    {
-                        float value = DollarApiService.ConversionDollarToReal(userInput);
-                        Console.WriteLine($"A quantidade de ${userInput} em Reais equivale a: R${value:F2}");
-                        inputUser = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Entrada inválida. Tente Novamente.");
-                    }
+                    float value = DollarApiService.ConversionDollarToReal(userInput);
+                    Console.WriteLine($"A quantidade de ${userInput} em Reais equivale a: R${value:F2}");
+                    inputUser = true;
                 }
-                
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Tente Novamente.");
+                }
             }
         }
         public static void ConversionRealToDollarMenu()
         {
+            bool inputUser = false;
+            float userInput = 0;
+            while (!inputUser)
             {
-                bool inputUser = false;
-                float userInput = 0;
-                while (!inputUser)
+                Console.Write("Digite a quantidade de Reais para converter: ");
+                string? input = Console.ReadLine();
+                if (!string.IsNullOrEmpty(input) && float.TryParse(input, out userInput))
                 {
-                    Console.Write("Digite a quantidade de Reais para converter: ");
-                    string? input = Console.ReadLine();
-                    if (!string.IsNullOrEmpty(input) && float.TryParse(input, out userInput))
-                    {
-                        float value = DollarApiService.ConversionRealToDollar(userInput);
-                        Console.WriteLine($"A quantidade de R${userInput} em Dolares equivale a: ${value:F2}");
-                        inputUser = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Entrada inválida. Tente Novamente.");
-                    }
+                    float value = DollarApiService.ConversionRealToDollar(userInput);
+                    Console.WriteLine($"A quantidade de R${userInput} em Dolares equivale a: ${value:F2}");
+                    inputUser = true;
                 }
-
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Tente Novamente.");
+                }
             }
         }
 

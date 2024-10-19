@@ -1,9 +1,6 @@
-﻿using System;
-using CSharpJourney.core.Helpers;
-using Files.core.Interfaces;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using CSharpJourney.Helpers;
 
-namespace Files.core.Services
+namespace CSharpJourney.Services
 {
     public static class MathMenuService
     {

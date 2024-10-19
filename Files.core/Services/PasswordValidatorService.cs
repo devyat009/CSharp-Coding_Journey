@@ -1,4 +1,4 @@
-﻿namespace CSharpJourney.core.Services
+﻿namespace CSharpJourney.Services
 {
     public static class PasswordValidatorService
     {

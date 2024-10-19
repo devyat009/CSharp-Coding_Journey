@@ -1,6 +1,4 @@
-﻿using CSharpJourney.core.Services;
-
-namespace Files.core.Interfaces
+﻿namespace CSharpJourney.Interfaces
 {
     public interface IMath
     {

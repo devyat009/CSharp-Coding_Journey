@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files.core", "Files.core\Files.core.csproj", "{BA2CA5D5-FE95-42A8-BF7B-52D789D76E20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApps", "Files.core\ConsoleApps.csproj", "{BA2CA5D5-FE95-42A8-BF7B-52D789D76E20}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "programT.tests", "programT.tests\programT.tests.csproj", "{FB84091B-CA7A-4DC8-AB88-A5CC3F09FC95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnit.tests", "programT.tests\xUnit.tests.csproj", "{FB84091B-CA7A-4DC8-AB88-A5CC3F09FC95}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApplication\WebApp.csproj", "{6774B065-A660-4309-9FCC-FE3BBEACD13C}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularFront", "AngularFront\", "{C82D53BD-D54A-492C-9655-FB71D1C9E504}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularFront(1)", "AngularFront\", "{C82D53BD-D54A-492C-9655-FB71D1C9E504}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50229"
