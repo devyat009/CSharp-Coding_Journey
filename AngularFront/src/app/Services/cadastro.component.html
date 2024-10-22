@@ -1,0 +1,11 @@
+<div>
+  <h2>Cadastro de Usuário</h2>
+  <form (ngSubmit)="cadastrarComponent()">
+    <label>Nome: <input [(ngModel)]="cadastroRequest.nome" name="nome" required /></label><br />
+    <label>Idade: <input type="number" [(ngModel)]="cadastroRequest.idade" name="idade" required /></label><br />
+    <label>Data de Nascimento: <input type="date" [(ngModel)]="cadastroRequest.datanascimento" name="nascimento" required /></label><br />
+    <label>CPF: <input [(ngModel)]="cadastroRequest.cpf" name="cpf" required /></label><br />
+    <label>CEP: <input [(ngModel)]="cadastroRequest.cep" name="cep" required /></label><br />
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>

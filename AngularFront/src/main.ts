@@ -1,8 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BrowserModule} from '@angular/platform-browser';
+import { CadastroModule } from './app/Services/cadastro.module';
 
-import { AppModule } from './app/app.module';
-
-platformBrowserDynamic().bootstrapModule(AppModule, {
+platformBrowserDynamic().bootstrapModule(CadastroModule, {
   ngZoneEventCoalescing: true
 })
   .catch(err => console.error(err));

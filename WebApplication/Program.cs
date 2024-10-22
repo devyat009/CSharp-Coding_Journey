@@ -1,5 +1,7 @@
 
 using Microsoft.OpenApi.Models;
+using WebApp.Services.CadastrarInterface;
+using WebApp.Services.CadastrarService;
 
 namespace WebApp
 {
@@ -9,11 +11,19 @@ namespace WebApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Adiciona o serviço de Cadastro com a conexão
+            builder.Services.AddScoped<ICadastroService>(sp =>
+            {
+                var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+                return new CadastroService(connectionString);
+            });
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
 
             // Altera a politica para que o angular possa acessar as apis no swagger, indepentemente da porta, metodo ou header.
-            builder.Services.AddCors(option => option.AddDefaultPolicy(policy =>
+            builder.Services.AddCors(option => option.AddPolicy("AllowAllOrigins", policy =>
             {
                 policy.AllowAnyOrigin();
                 policy.AllowAnyHeader();
@@ -47,23 +57,11 @@ namespace WebApp
 
 
             app.UseHttpsRedirection(); // Pode gerar problemas de redirecionamento para https (as vezes)
-            app.UseCors(); // Usa as politicas criadas anteriomente
+            app.UseCors("AllowAllOrigins"); // Usa as politicas criadas anteriomente
 
             app.UseStaticFiles(); // Usado para que possa ser carregado o arquivo html
-            app.MapGet("/", () => Results.Redirect("/buscacep"));
-            app.MapGet("/buscacep", () =>
-            {
-                var htmlpath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "htmlpage.html");
-                // Retorna uma pagina HTML
-                return Results.File(htmlpath, "text/html");
-            });
 
-            app.MapGet("/cadastro", () =>
-            {
-                var htmlpath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "cadastro.html");
-                return Results.File($"{htmlpath}", "text/html");
-            });
-
+            // Mapeia os controllers
             app.MapControllers();
 
             app.Run();
