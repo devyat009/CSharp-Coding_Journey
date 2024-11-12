@@ -30,7 +30,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularFront", "AngularFron
 		SlnRelativePath = "AngularFront\"
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaBiblioteca", "AtividadeBiblioteca\SistemaBiblioteca.csproj", "{71DDA21B-D435-4A24-BC41-A26C2433AA8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaBiblioteca", "AtividadeBiblioteca\SistemaBiblioteca.csproj", "{5095CCF4-964D-42D1-90BC-4ADC93FE2F7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,10 +54,10 @@ Global
 		{C82D53BD-D54A-492C-9655-FB71D1C9E504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C82D53BD-D54A-492C-9655-FB71D1C9E504}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{C82D53BD-D54A-492C-9655-FB71D1C9E504}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{71DDA21B-D435-4A24-BC41-A26C2433AA8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71DDA21B-D435-4A24-BC41-A26C2433AA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71DDA21B-D435-4A24-BC41-A26C2433AA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71DDA21B-D435-4A24-BC41-A26C2433AA8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5095CCF4-964D-42D1-90BC-4ADC93FE2F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5095CCF4-964D-42D1-90BC-4ADC93FE2F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5095CCF4-964D-42D1-90BC-4ADC93FE2F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5095CCF4-964D-42D1-90BC-4ADC93FE2F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
